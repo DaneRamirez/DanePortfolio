@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dane's Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Dane's Portfolio</a>
+        <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Home Section -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Dane Ramirez</span>
+          </h2>
+          <p class="text-muted">
+            Aspiring Data Engineer with a strong foundation in database administration, cloud technologies, and DevOps. Skilled in Python, SQL, and big data tools like Apache Hadoop, I build scalable, high-performance data solutions.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <a href="DaneTechResume.pdf" download="Dane_Ramirez_Resume" style="text-decoration: none; color: #fff;">Download Resume</a>
+          </button>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.png" class="img-fluid" alt="Dane Ramirez" />
+        </div>
+      </div>
+    </section>
+    <!-- Home Section Ends -->
+
+    <!-- Expertise Section -->
+    <section class="expertise mt-5" id="expertise">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>Delivering Robust Data & Cloud Solutions</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img src="images/service-icon1.png" class="w-25 img-fluid" alt="Data Engineering" />
+            </div>
+            <div class="content mt-3">
+              <h4>Data Engineering</h4>
+              <p class="text-muted">
+                Designing and implementing scalable data architectures and real-time data pipelines.
+              </p>
+              <a href="#portfolio" class="link">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img src="images/service-icon2.png" class="w-25 img-fluid" alt="Database Administration" />
+            </div>
+            <div class="content mt-3">
+              <h4>Database Administration</h4>
+              <p class="text-muted">
+                Expertise in designing, deploying, and optimizing databases like PostgreSQL, Oracle, and MySQL.
+              </p>
+              <a href="#portfolio" class="link">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img src="images/service-icon3.png" class="w-25 img-fluid" alt="Cloud & DevOps" />
+            </div>
+            <div class="content mt-3">
+              <h4>Cloud & DevOps</h4>
+              <p class="text-muted">
+                Proficient with Docker, Kubernetes, AWS, and Azure to build and maintain cloud infrastructures.
+              </p>
+              <a href="#portfolio" class="link">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Expertise Section Ends -->
+
+    <!-- Skills Section -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress python">
+                  <span class="progress-value">85%</span>
+                </div>
+                <br />
+                <span class="text">Python</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress sql">
+                  <span class="progress-value">90%</span>
+                </div>
+                <br />
+                <span class="text">SQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress db-admin">
+                  <span class="progress-value">80%</span>
+                </div>
+                <br />
+                <span class="text">Database Admin</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress cloud-devops">
+                  <span class="progress-value">65%</span>
+                </div>
+                <br />
+                <span class="text">Cloud & Deployment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>Technical Skills</small>
+            <h3>Building High-Performance Data Solutions</h3>
+            <p class="text-muted">
+              Proficient in Python, Java, SQL, Oracle DB, PostgreSQL, Apache Hadoop, Spark, Kafka, and Airflow. Experienced with Docker, Kubernetes, AWS, and Azure.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <a href="DaneTechResume.pdf" download="Dane_Ramirez_Resume" style="text-decoration: none; color: #fff;">Download Resume</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section Ends -->
+
+    <!-- Portfolio Section with Filtering and Read More Modals -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>My Projects</small>
+        <h3>Selected Work</h3>
+      </div>
+      <div id="myBtnContainer" class="text-center mt-4">
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="data">Data</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="inprogress">In-Progress</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+
+          <!-- Project 1: Student Connector & Marketplace (Web App) -->
+          <div class="post col-md-4 webapp website all col-10 mt-3" data-aos="fade-up">
+            <div class="card">
+              <img src="images/studenthub.png" class="card-img-top" alt="Student Connector & Marketplace" />
+              <div class="card-body text-center">
+                <h4 class="card-title">NSCC StudentHub</h4>
+                <span class="badge bg-secondary badge-pill">Web App</span>
+                <span class="badge bg-secondary badge-pill">Website</span>
+                <br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#projectModal2">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2: Halifax Bus Tracker (Web App) -->
+          <div class="post col-md-4 webapp all col-10 mt-3" data-aos="fade-up">
+            <div class="card">
+              <img src="images/screenshot.png" class="card-img-top" alt="Halifax Bus Tracker" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Halifax Bus Tracker</h4>
+                <span class="badge bg-secondary badge-pill">Web App</span>
+                <span class="badge bg-secondary badge-pill">Python/Flask</span>
+                <br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#projectModal3">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3: Data Centre Management (Data) -->
+          <div class="post col-md-4 data all col-10 mt-3" data-aos="fade-up">
+            <div class="card">
+              <img src="images/12_Open-source_Tools_for_Hadoop_785.png" class="card-img-top" alt="Data Centre Management" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Data Centre Management</h4>
+                <span class="badge bg-secondary badge-pill">Data</span>
+                <br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#projectModal4">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4: Hair Salon Website (Website) -->
+          <div class="post col-md-4 website inprogress all col-10 mt-3" data-aos="fade-up">
+            <div class="card">
+              <img src="images/progress.jpg" class="card-img-top" alt="Hair Salon Website" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Hair Salon Website Commission (Expected May 2025)</h4>
+                <span class="badge bg-secondary badge-pill">Website</span>
+                <span class="badge bg-secondary badge-pill">In-Progress</span>
+                <br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#projectModal1">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!--Project 5-->
+          <div class="post col-md-4 webapp data inprogress all col-10 mt-3" data-aos="fade-up">
+            <div class="card">
+              <img src="images/progress.jpg" class="card-img-top" alt="Hair Salon Website" />
+              <div class="card-body text-center">
+                <h4 class="card-title">End-End Aviation Data Streaming (Expected May 2025)</h4>
+                <span class="badge bg-secondary badge-pill">Webapp</span>
+                <span class="badge bg-secondary badge-pill">In-Progress</span>
+                <span class="badge bg-secondary badge-pill">Data</span>
+                <br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#projectModal5">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section Ends -->
+
+    <!-- Project Modals -->
+    <!-- Modal for Project 1: Hair Salon Website -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/progress.jpg" class="img-fluid" alt="Hair Salon Website" />
+            </div>
+            <div class="content mt-3">
+              <h4 class="card-title">Hair Salon Website</h4>
+              <p class="text-muted">
+                Led a cross-functional team to design and deploy a full-stack website for a local hair salon company featuring a robust database architecture and cloud-based server deployment. Developed scalable backend services integrating secure payment and appointment scheduling APIs while aligning technical solutions with budgetary constraints and deadlines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Project 2: Student Connector & Marketplace -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/Screenshot_2025-02-19_155646.png" class="img-fluid" alt="Student Connector & Marketplace" />
+            </div>
+            <div class="content mt-3">
+              <h4 class="card-title">Student Connector & Marketplace</h4>
+              <p class="text-muted">
+                Co-led the design and deployment of databases using PostgreSQL, Azure, and Docker, ensuring high availability and scalability. Redesigned schemas to optimize performance and established continuous integration pipelines for agile development.
+              </p>
+              <ul class="text-muted">
+                <li>Users can track their Job Applications</li>
+                <li>Buy and Sell used books</li>
+                <li>Use our trained AI wrapper to build customized resumes</li>
+                <li>Use the community board to ask questions</li>
+                <li>Rate professors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Project 3: Halifax Bus Tracker -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/screenshot.png" class="img-fluid" alt="Halifax Bus Tracker" />
+            </div>
+            <div class="content mt-3">
+              <h4 class="card-title">Halifax Bus Tracker</h4>
+              <p class="text-muted">
+                Developed a live bus tracking web app processing 100+ GTFS real-time data points per minute via protobuf. Engineered a Python/Flask backend with 5-second refresh intervals and implemented route filtering with GeoJSON layers to display vehicle details.
+              </p>
+              <ul class=" text-muted">
+                <li>Users can view all busses in HRM</li>
+                <li>Users can tick/untick busses to view specific routes</li>
+                <li>Routes are updated in real time</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Project 4: Data Centre Management -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/12_Open-source_Tools_for_Hadoop_785.png" class="img-fluid" alt="Data Centre Management" />
+            </div>
+            <div class="content mt-3">
+              <h4 class="card-title">Data Centre Management</h4>
+              <p class="text-muted">
+                Directed the setup and integration of a Hadoop cluster on bare-metal servers to boost data processing capabilities. Coordinated dataset selection and deployment with peers, significantly enhancing processing speed and system stability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Project 5: Aviation  Website -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/progress.jpg" class="img-fluid" alt="Avation Website" />
+            </div>
+            <div class="content mt-3">
+              <h4 class="card-title">End-End Aviation Data Streaming</h4>
+              <p class="text-muted">
+                Developing a real-time flight tracking system, using Python, Kafka, Spark, PostgreSQL, and Flask. The pipeline ingested flight data from the Aviationstack API, processed it with Spark for filtering and enrichment, and stored it in PostgreSQL for historical analysis. A Flask web app with Leaflet.js provided real-time visualization of nearby flights, while WebSocket ensured low-latency updates. Orchestrated with Airflow and containerized using Docker Compose
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project Modals End -->
+
+    <!-- Education Section -->
+    <section class="blog mt-5 pb-5" id="education">
+      <div class="heading text-center pt-5">
+        <small>Education & Certifications</small>
+        <h3>Academic Background</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <!-- NSCC Education -->
+        <div class="blogpost col-md-6 col-10 mt-2 mt-md-0">
+          <div class="card">
+            <img src="images/spring-2023-qn-web-header.png" class="card-img-top rounded-4" alt="NSCC" />
+            <div class="card-body px-4">
+              <small>Nova Scotia Community College</small>
+              <span class="ms-3">Sep 2023 – May 2025</span>
+              <p class="text-muted" style="font-size:0.9rem;">Nova Scotia Community College</p>
+            </div>
+          </div>
+        </div>
+        <!-- IBM Data Engineering Course -->
+        <div class="blogpost col-md-6 col-10 mt-5 mt-md-0">
+          <div class="card">
+            <img src="images/image.png" class="card-img-top rounded-4" alt="IBM Data Engineering" />
+            <div class="card-body px-4">
+              <small>Coursera – IBM Data Engineering</small>
+              <span class="ms-3">Dec 2023 – May 2025</span>
+              <p class="text-muted" style="font-size:0.9rem;">Coursera online course</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section Ends -->
+
+    <!-- Contact Section -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Questions? Let's Connect</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="col-11"><p>Dartmouth, NS, Canada</p></div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1"><i class="bi bi-telephone-fill"></i></div>
+            <div class="col-11"><p>+1 782-234-5152</p></div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1"><i class="bi bi-send-fill"></i></div>
+            <div class="col-11"><p>danenirel1234@gmail.com</p></div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1"><i class="bi bi-linkedin"></i></div>
+            <div class="col-11">
+              <p><a href="https://linkedin.com/in/dane-ramirez-08b84b282" target="_blank">LinkedIn Profile</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3"><input type="text" class="form-control" placeholder="Name" /></div>
+            <div class="mb-3"><input type="email" class="form-control" placeholder="E-mail" /></div>
+            <div class="mb-3"><input type="text" class="form-control" placeholder="Mobile No." /></div>
+            <div class="mb-3"><textarea class="form-control" placeholder="Message" rows="5"></textarea></div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Contact Section Ends -->
+
+    <!-- Back To Top Button -->
+    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Dane Ramirez Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">Skills</a>
+        <div class="vr"></div>
+        <a href="#expertise">Expertise</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Projects</a>
+        <div class="vr"></div>
+        <a href="#education">Education</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <a href="https://linkedin.com/in/dane-ramirez-08b84b282" target="_blank" class="rounded-pill">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      <hr class="text-muted my-4" />
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Library JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, offset: 50 });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
